@@ -9,7 +9,7 @@ Release:	2%{?dist}
 License:	GPLv2
 Group:		System/Kernel and hardware
 Url:		http://www.memtest.org
-Source0:	https://github.com/memtest86plus/%{name}/archive/v%{version}/memtest86plus-%{version}.tar.gz
+Source0:	https://github.com/memtest86plus/memtest86plus/archive/v%{version}/memtest86plus-%{version}.tar.gz
 BuildRequires:	gcc
 BuildRequires:	binutils
 ExclusiveArch:	x86_64
@@ -36,6 +36,9 @@ install -m644 memtest.{bin,efi} -D %{buildroot}/boot/
 /boot/memtest.bin
 
 %changelog
+* next
+- Fix upstream source URL
+
 * Tue Jan 24 2023 Yann Dirson <yann.dirson@vates.fr> - 6.01-2
 - Rename rpm back to upstream "memtest86+" name
 
