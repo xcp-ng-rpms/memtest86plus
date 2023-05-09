@@ -4,7 +4,7 @@
 
 Summary:	A stand alone memory test for x86 architecture systems
 Name:		memtest86+
-Version:	6.10
+Version:	6.20
 Release:	1%{?dist}
 License:	GPLv2
 Group:		System/Kernel and hardware
@@ -36,6 +36,9 @@ install -m644 memtest.{bin,efi} -D %{buildroot}/boot/
 /boot/memtest.bin
 
 %changelog
+* Tue May 09 2023 Yann Dirson <yann.dirson@vates.fr> - 6.20-1
+- New uptream release
+
 * Thu Mar 02 2023 Yann Dirson <yann.dirson@vates.fr> - 6.10-1
 - New uptream release
 - Fix upstream source URL
